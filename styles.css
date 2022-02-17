@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --clr-theme-0: #FFFFFF;
+  --clr-theme-1: #9d111a;
+
+  --ff-primary: 'Poppins', sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -7,6 +14,62 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-family: var(--ff-primary);
 }
 
+/* All header-related styling */
+.header {
+  text-align: center;
+  padding: 0 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-btns {
+  margin: auto;
+  color: var(--clr-theme-1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.button {
+  padding: 0 1rem;
+  display: block;
+  position: relative;
+}
+
+.span-text {
+  z-index: 10;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  transition: color 0.15s;
+}
+
+.button:hover .span-text{
+  color: var(--clr-theme-0);
+}
+
+.span-fill {
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 0;
+  transition: height 0.15s;
+  display: block;
+  position: absolute;
+  background-color: var(--clr-theme-1);
+}
+
+.button:hover .span-fill{
+  height: 100%;
+}
+
+/* All content-related styling */
+
+.content {
+  margin: 0 5rem;
+}

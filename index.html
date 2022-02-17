@@ -2,8 +2,42 @@
 <html>
 <head>
     <title>Noires au Canada</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Made Easy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <h1>L'histoire des Noires au Canada</h1>
+    <div class="header">
+        <h1>L'histoire des Noires au Canada</h1>
+        <div class="header-btns">
+            <!-- Supposed to be a <button>, not a <a> -->
+            <a class="button" id="person1-btn">
+                <span class="span-fill"></span>
+                <span class="span-text">Person 1</span>
+            </a>
+            <a class="button" id="person2-btn">
+                <span class="span-fill"></span>
+                <span class="span-text">Person 2</span>
+            </a>
+            <a class="button" id="person3-btn">
+                <span class="span-fill"></span>
+                <span class="span-text">Person 3</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="person1">
+            <h2>Person 1</h2>
+        </div>
+        <div id="person2">
+            <h2>Person 2</h2>
+        </div>
+        <div id="person3">
+            <h2>Person 3</h2>
+        </div>
+    </div>
 </body>
 </html>
