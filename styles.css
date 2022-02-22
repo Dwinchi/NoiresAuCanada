@@ -73,3 +73,8 @@ body {
 .content {
   margin: 0 5rem;
 }
+
+.person {
+  flex-direction: column;
+  text-align: center;
+}
